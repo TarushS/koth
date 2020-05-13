@@ -20,5 +20,5 @@ function alt_tab(){
 	sleep 0.5
 }
 
-IP="127.0.0.1"
-#IP=$(ip -4 addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}' --color=none)
+#IP="127.0.0.1"
+IP=$(ip -4 addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}' --color=none)
